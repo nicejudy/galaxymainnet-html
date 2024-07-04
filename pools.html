@@ -1,0 +1,1161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>DeExchanger</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="DeExchanger- Unleashing the power of Decentralization">
+    <link rel="shortcut icon" href="assets/images/bnb.png">
+    <!-- CSS v5.2.1 -->
+    <link href="assets/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Loader -->
+    <div class="loader-wrapper">
+        <div class="loader">
+            <div class="cube">
+                <div class="cube__inner"></div>
+            </div>
+            <div class="cube">
+                <div class="cube__inner"></div>
+            </div>
+            <div class="cube">
+                <div class="cube__inner"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-xl">
+            <div class="container-fluid">
+                <a class="navbar-brand m-0 p-0" href="index.html">
+                    <span>DeExchanger</span>
+                </a>
+                <div class="navbar-collapse justify-content-between collapse" id="navbarContent">
+                    <ul class="navbar-nav mb-2 m-lg-0 gap-1 justify-content-center align-items-xl-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="trade.html">Trade</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="farms.html">Farms</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="pools.html">Pools</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="position-manager.html">Position Manager</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="simple-stacking.html">Simple stacking</a>
+                        </li>
+                    </ul>
+                    <div
+                        class="nav-right d-flex flex-column flex-xl-row align-items-start align-items-xl-center gap-3 ms-xl-2">
+                        <div class="dropdown coin-select lang-dropdown">
+                            <button class="btn" type="button" id="lang-btn" data-bs-toggle="dropdown"
+                                aria-expanded="false"><i class="fa-solid fa-globe"></i></button>
+                            <ul class="dropdown-menu" aria-labelledby="lang-btn">
+                                <li>Select language</li>
+                                <li>
+                                    <hr>
+                                </li>
+                                <li class="dropdown-item">
+                                    <img src="assets/images/united-states.png" alt=""><span>Eng</span>
+                                </li>
+                                <li class="dropdown-item">
+                                    <img src="assets/images/germany.png" alt=""><span>german</span>
+                                </li>
+                                <li class="dropdown-item">
+                                    <img src="assets/images/france.png" alt=""><span>french</span>
+                                </li>
+                                <li class="dropdown-item">
+                                    <img src="assets/images/spain.png" alt=""><span>spanish</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn setting-btn" data-bs-toggle="modal" data-bs-target="#settingModal">
+                            <i class="fa-solid fa-gear"></i>
+                        </button>
+                        <div class="dropdown coin-select">
+                            <button class="btn dropdown-toggle" type="button" id="network-btn" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="assets/images/bnb.png" alt="">
+                                <span>BNB Smart Chain</span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="network-btn">
+                                <li>Select Network</li>
+                                <li>
+                                    <hr>
+                                </li>
+                                <li class="dropdown-item"><img src="assets/images/bnb.png" alt=""><span>BNB Smart
+                                        Chain</span></li>
+                                <li class="dropdown-item"><img src="assets/images/eth.png" alt=""><span>Ethereum</span>
+                                </li>
+                                <li class="dropdown-item"><img src="assets/images/poly.png" alt=""><span>Polygon</span>
+                                </li>
+                                <li class="dropdown-item"><img src="assets/images/arb.png" alt=""><span>Arbitrum
+                                        One</span></li>
+                            </ul>
+                        </div>
+                        <a class="primary-btn" href="#" data-bs-toggle="modal" data-bs-target="#ConnectModal">Connect
+                            Wallet</a>
+                    </div>
+                </div>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="toggle-menu-icon"><span></span><span></span><span></span><span></span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content" class="position-relative">
+        <section class="farms">
+            <div class="container">
+                <div class="page-title">
+                    <div class="row align-items-center">
+                        <div class="col-md-7">
+                            <h1>Pools</h1>
+                            <p>Stake LP tokens to earn</p>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="title-img text-center text-md-end">
+                                <img src="assets/images/page-title-img.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inner-gap">
+                    <div
+                        class="filter-wrapper d-flex flex-wrap align-items-center justify-content-between gap-3 mb-4 mb-lg-5">
+                        <div class="d-flex flex-wrap align-items-center gap-3">
+                            <div class="d-flex flex-wrap align-items-center gap-3">
+                                <ul class="trade-nav nav nav-tabs" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="live-tab" data-bs-toggle="pill"
+                                            data-bs-target="#live" type="button" role="tab" aria-controls="live"
+                                            aria-selected="true">Live</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="finished-tab" data-bs-toggle="pill"
+                                            data-bs-target="#finished" type="button" role="tab" aria-controls="finished"
+                                            aria-selected="false">Finished</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center gap-2 gap-sm-3">
+                            <select class="form-select w-auto">
+                                <option value="">Sort by</option>
+                                <option value="1">price low to high</option>
+                                <option value="2">price high to low</option>
+                                <option value="2">popularity</option>
+                            </select>
+                            <div>
+                                <input type="search" class="form-control" placeholder="Search Farms">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="live" role="tabpanel" aria-labelledby="live-tab"
+                            tabindex="0">
+                            <div class="row gy-4">
+                                <div class="col-md-6 col-xl-4">
+                                    <div class="token-card farms-card pools-card">
+                                        <div
+                                            class=" d-flex flex-wrap align-items-center justify-content-between gap-2 mb-4">
+                                            <div class="d-flex gap-2 align-items-center">
+                                                <div class="title">
+                                                    <span>Stake CAKE</span>
+                                                    <p class="text-black-50">Stake BTC</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div><img src="assets/images/coin.png" class="coin-group" alt=""></div>
+                                            </div>
+                                        </div>
+                                        <div class="row gy-4">
+                                            <div class="col-4">
+                                                <h6 class="text-black-50">Flexible APY:</h6>
+                                                <h5>0.14%</h5>
+                                            </div>
+                                            <div class="col-8 text-end">
+                                                <div><img src="assets/images/chart.png" class="img-fluid" alt=""></div>
+                                            </div>
+                                            <div class="col-4">
+                                                <h6 class="text-black-50">Locked APR:</h6>
+                                            </div>
+                                            <div class="col-8 text-end">
+                                                <h5>Up to 3.4%</h5>
+                                            </div>
+                                            <div class="col-12 mt-4">
+                                                <div
+                                                    class="d-flex flex-wrap align-items-center justify-content-between gap-2">
+                                                    <span class="badge badge-outline">Single Token</span>
+                                                    <a href="#">More Details<i
+                                                            class="fa-solid fa-chevron-right"></i></a>
+                                                </div>
+                                            </div>
+                                            <hr class="mb-1">
+                                            <div class="col-12">
+                                                <button class="primary-btn w-100" data-bs-toggle="modal" data-bs-target="#ConnectModal">Connect
+                                                    Wallet</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xl-4">
+                                    <div class="token-card farms-card pools-card">
+                                        <div
+                                            class=" d-flex flex-wrap align-items-center justify-content-between gap-2 mb-4">
+                                            <div class="d-flex gap-2 align-items-center">
+                                                <div class="title">
+                                                    <span>Earn CSIX</span>
+                                                    <p class="text-black-50">Stake BTC</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div><img src="assets/images/coin.png" class="coin-group" alt=""></div>
+                                            </div>
+                                        </div>
+                                        <div class="row gy-4">
+                                            <div class="col-4">
+                                                <h6 class="text-black-50">Flexible APY:</h6>
+                                                <h5>0.14%</h5>
+                                            </div>
+                                            <div class="col-8 text-end">
+                                                <div><img src="assets/images/chart.png" class="img-fluid" alt=""></div>
+                                            </div>
+                                            <div class="col-4">
+                                                <h6 class="text-black-50">Locked APR:</h6>
+                                            </div>
+                                            <div class="col-8 text-end">
+                                                <h5>Up to 3.4%</h5>
+                                            </div>
+                                            <div class="col-12 mt-4">
+                                                <div
+                                                    class="d-flex flex-wrap align-items-center justify-content-between gap-2">
+                                                    <span class="badge badge-outline">Single Token</span>
+                                                    <a href="#">More Details<i
+                                                            class="fa-solid fa-chevron-right"></i></a>
+                                                </div>
+                                            </div>
+                                            <hr class="mb-1">
+                                            <div class="col-12">
+                                                <button class="primary-btn w-100" data-bs-toggle="modal" data-bs-target="#ConnectModal">Connect
+                                                    Wallet</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xl-4">
+                                    <div class="token-card farms-card pools-card">
+                                        <div
+                                            class=" d-flex flex-wrap align-items-center justify-content-between gap-2 mb-4">
+                                            <div class="d-flex gap-2 align-items-center">
+                                                <div class="title">
+                                                    <span>Earn PLAY</span>
+                                                    <p class="text-black-50">Stake BTC</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div><img src="assets/images/coin.png" class="coin-group" alt=""></div>
+                                            </div>
+                                        </div>
+                                        <div class="row gy-4">
+                                            <div class="col-4">
+                                                <h6 class="text-black-50">Flexible APY:</h6>
+                                                <h5>0.14%</h5>
+                                            </div>
+                                            <div class="col-8 text-end">
+                                                <div><img src="assets/images/chart.png" class="img-fluid" alt=""></div>
+                                            </div>
+                                            <div class="col-4">
+                                                <h6 class="text-black-50">Locked APR:</h6>
+                                            </div>
+                                            <div class="col-8 text-end">
+                                                <h5>Up to 3.4%</h5>
+                                            </div>
+                                            <div class="col-12 mt-4">
+                                                <div
+                                                    class="d-flex flex-wrap align-items-center justify-content-between gap-2">
+                                                    <span class="badge badge-outline">Single Token</span>
+                                                    <a href="#">More Details<i
+                                                            class="fa-solid fa-chevron-right"></i></a>
+                                                </div>
+                                            </div>
+                                            <hr class="mb-1">
+                                            <div class="col-12">
+                                                <button class="primary-btn w-100" data-bs-toggle="modal" data-bs-target="#ConnectModal">Connect
+                                                    Wallet</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xl-4">
+                                    <div class="token-card farms-card pools-card">
+                                        <div
+                                            class=" d-flex flex-wrap align-items-center justify-content-between gap-2 mb-4">
+                                            <div class="d-flex gap-2 align-items-center">
+                                                <div class="title">
+                                                    <span>Earn XCAD</span>
+                                                    <p class="text-black-50">Stake BTC</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div><img src="assets/images/coin.png" class="coin-group" alt=""></div>
+                                            </div>
+                                        </div>
+                                        <div class="row gy-4">
+                                            <div class="col-4">
+                                                <h6 class="text-black-50">Flexible APY:</h6>
+                                                <h5>0.14%</h5>
+                                            </div>
+                                            <div class="col-8 text-end">
+                                                <div><img src="assets/images/chart.png" class="img-fluid" alt=""></div>
+                                            </div>
+                                            <div class="col-4">
+                                                <h6 class="text-black-50">Locked APR:</h6>
+                                            </div>
+                                            <div class="col-8 text-end">
+                                                <h5>Up to 3.4%</h5>
+                                            </div>
+                                            <div class="col-12 mt-4">
+                                                <div
+                                                    class="d-flex flex-wrap align-items-center justify-content-between gap-2">
+                                                    <span class="badge badge-outline">Single Token</span>
+                                                    <a href="#">More Details<i
+                                                            class="fa-solid fa-chevron-right"></i></a>
+                                                </div>
+                                            </div>
+                                            <hr class="mb-1">
+                                            <div class="col-12">
+                                                <button class="primary-btn w-100" data-bs-toggle="modal" data-bs-target="#ConnectModal">Connect
+                                                    Wallet</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xl-4">
+                                    <div class="token-card farms-card pools-card">
+                                        <div
+                                            class=" d-flex flex-wrap align-items-center justify-content-between gap-2 mb-4">
+                                            <div class="d-flex gap-2 align-items-center">
+                                                <div class="title">
+                                                    <span>Earn MBX</span>
+                                                    <p class="text-black-50">Stake BTC</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div><img src="assets/images/coin.png" class="coin-group" alt=""></div>
+                                            </div>
+                                        </div>
+                                        <div class="row gy-4">
+                                            <div class="col-4">
+                                                <h6 class="text-black-50">Flexible APY:</h6>
+                                                <h5>0.14%</h5>
+                                            </div>
+                                            <div class="col-8 text-end">
+                                                <div><img src="assets/images/chart.png" class="img-fluid" alt=""></div>
+                                            </div>
+                                            <div class="col-4">
+                                                <h6 class="text-black-50">Locked APR:</h6>
+                                            </div>
+                                            <div class="col-8 text-end">
+                                                <h5>Up to 3.4%</h5>
+                                            </div>
+                                            <div class="col-12 mt-4">
+                                                <div
+                                                    class="d-flex flex-wrap align-items-center justify-content-between gap-2">
+                                                    <span class="badge badge-outline">Single Token</span>
+                                                    <a href="#">More Details<i
+                                                            class="fa-solid fa-chevron-right"></i></a>
+                                                </div>
+                                            </div>
+                                            <hr class="mb-1">
+                                            <div class="col-12">
+                                                <button class="primary-btn w-100" data-bs-toggle="modal" data-bs-target="#ConnectModal">Connect
+                                                    Wallet</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xl-4">
+                                    <div class="token-card farms-card pools-card">
+                                        <div
+                                            class=" d-flex flex-wrap align-items-center justify-content-between gap-2 mb-4">
+                                            <div class="d-flex gap-2 align-items-center">
+                                                <div class="title">
+                                                    <span>Earn AXL</span>
+                                                    <p class="text-black-50">Stake BTC</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div><img src="assets/images/coin.png" class="coin-group" alt=""></div>
+                                            </div>
+                                        </div>
+                                        <div class="row gy-4">
+                                            <div class="col-4">
+                                                <h6 class="text-black-50">Flexible APY:</h6>
+                                                <h5>0.14%</h5>
+                                            </div>
+                                            <div class="col-8 text-end">
+                                                <div><img src="assets/images/chart.png" class="img-fluid" alt=""></div>
+                                            </div>
+                                            <div class="col-4">
+                                                <h6 class="text-black-50">Locked APR:</h6>
+                                            </div>
+                                            <div class="col-8 text-end">
+                                                <h5>Up to 3.4%</h5>
+                                            </div>
+                                            <div class="col-12 mt-4">
+                                                <div
+                                                    class="d-flex flex-wrap align-items-center justify-content-between gap-2">
+                                                    <span class="badge badge-outline">Single Token</span>
+                                                    <a href="#">More Details<i
+                                                            class="fa-solid fa-chevron-right"></i></a>
+                                                </div>
+                                            </div>
+                                            <hr class="mb-1">
+                                            <div class="col-12">
+                                                <button class="primary-btn w-100" data-bs-toggle="modal" data-bs-target="#ConnectModal">Connect
+                                                    Wallet</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xl-4">
+                                    <div class="token-card farms-card pools-card">
+                                        <div
+                                            class=" d-flex flex-wrap align-items-center justify-content-between gap-2 mb-4">
+                                            <div class="d-flex gap-2 align-items-center">
+                                                <div class="title">
+                                                    <span>Earn AXL</span>
+                                                    <p class="text-black-50">Earn WNCG</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div><img src="assets/images/coin.png" class="coin-group" alt=""></div>
+                                            </div>
+                                        </div>
+                                        <div class="row gy-4">
+                                            <div class="col-4">
+                                                <h6 class="text-black-50">Flexible APY:</h6>
+                                                <h5>0.14%</h5>
+                                            </div>
+                                            <div class="col-8 text-end">
+                                                <div><img src="assets/images/chart.png" class="img-fluid" alt=""></div>
+                                            </div>
+                                            <div class="col-4">
+                                                <h6 class="text-black-50">Locked APR:</h6>
+                                            </div>
+                                            <div class="col-8 text-end">
+                                                <h5>Up to 3.4%</h5>
+                                            </div>
+                                            <div class="col-12 mt-4">
+                                                <div
+                                                    class="d-flex flex-wrap align-items-center justify-content-between gap-2">
+                                                    <span class="badge badge-outline">Single Token</span>
+                                                    <a href="#">More Details<i
+                                                            class="fa-solid fa-chevron-right"></i></a>
+                                                </div>
+                                            </div>
+                                            <hr class="mb-1">
+                                            <div class="col-12">
+                                                <button class="primary-btn w-100" data-bs-toggle="modal" data-bs-target="#ConnectModal">Connect
+                                                    Wallet</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xl-4">
+                                    <div class="token-card farms-card pools-card">
+                                        <div
+                                            class=" d-flex flex-wrap align-items-center justify-content-between gap-2 mb-4">
+                                            <div class="d-flex gap-2 align-items-center">
+                                                <div class="title">
+                                                    <span>Earn AXL</span>
+                                                    <p class="text-black-50">Earn TUSD</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div><img src="assets/images/coin.png" class="coin-group" alt=""></div>
+                                            </div>
+                                        </div>
+                                        <div class="row gy-4">
+                                            <div class="col-4">
+                                                <h6 class="text-black-50">Flexible APY:</h6>
+                                                <h5>0.14%</h5>
+                                            </div>
+                                            <div class="col-8 text-end">
+                                                <div><img src="assets/images/chart.png" class="img-fluid" alt=""></div>
+                                            </div>
+                                            <div class="col-4">
+                                                <h6 class="text-black-50">Locked APR:</h6>
+                                            </div>
+                                            <div class="col-8 text-end">
+                                                <h5>Up to 3.4%</h5>
+                                            </div>
+                                            <div class="col-12 mt-4">
+                                                <div
+                                                    class="d-flex flex-wrap align-items-center justify-content-between gap-2">
+                                                    <span class="badge badge-outline">Single Token</span>
+                                                    <a href="#">More Details<i
+                                                            class="fa-solid fa-chevron-right"></i></a>
+                                                </div>
+                                            </div>
+                                            <hr class="mb-1">
+                                            <div class="col-12">
+                                                <button class="primary-btn w-100" data-bs-toggle="modal" data-bs-target="#ConnectModal">Connect
+                                                    Wallet</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xl-4">
+                                    <div class="token-card farms-card pools-card">
+                                        <div
+                                            class=" d-flex flex-wrap align-items-center justify-content-between gap-2 mb-4">
+                                            <div class="d-flex gap-2 align-items-center">
+                                                <div class="title">
+                                                    <span>Earn AXL</span>
+                                                    <p class="text-black-50">Earn BTC</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div><img src="assets/images/coin.png" class="coin-group" alt=""></div>
+                                            </div>
+                                        </div>
+                                        <div class="row gy-4">
+                                            <div class="col-4">
+                                                <h6 class="text-black-50">Flexible APY:</h6>
+                                                <h5>0.14%</h5>
+                                            </div>
+                                            <div class="col-8 text-end">
+                                                <div><img src="assets/images/chart.png" class="img-fluid" alt=""></div>
+                                            </div>
+                                            <div class="col-4">
+                                                <h6 class="text-black-50">Locked APR:</h6>
+                                            </div>
+                                            <div class="col-8 text-end">
+                                                <h5>Up to 3.4%</h5>
+                                            </div>
+                                            <div class="col-12 mt-4">
+                                                <div
+                                                    class="d-flex flex-wrap align-items-center justify-content-between gap-2">
+                                                    <span class="badge badge-outline">Single Token</span>
+                                                    <a href="#">More Details<i
+                                                            class="fa-solid fa-chevron-right"></i></a>
+                                                </div>
+                                            </div>
+                                            <hr class="mb-1">
+                                            <div class="col-12">
+                                                <button class="primary-btn w-100" data-bs-toggle="modal" data-bs-target="#ConnectModal">Connect
+                                                    Wallet</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="finished" role="tabpanel" aria-labelledby="finished-tab"
+                            tabindex="0">
+                            <div class="row gy-4">
+                                <div class="col-md-6 col-xl-4">
+                                    <div class="token-card farms-card pools-card">
+                                        <div
+                                            class=" d-flex flex-wrap align-items-center justify-content-between gap-2 mb-4">
+                                            <div class="d-flex gap-2 align-items-center">
+                                                <div class="title">
+                                                    <span>Stake CAKE</span>
+                                                    <p class="text-black-50">Stake BTC</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div><img src="assets/images/coin.png" class="coin-group" alt=""></div>
+                                            </div>
+                                        </div>
+                                        <div class="row gy-4">
+                                            <div class="col-4">
+                                                <h6 class="text-black-50">Flexible APY:</h6>
+                                                <h5>0.14%</h5>
+                                            </div>
+                                            <div class="col-8 text-end">
+                                                <div><img src="assets/images/chart.png" class="img-fluid" alt=""></div>
+                                            </div>
+                                            <div class="col-4">
+                                                <h6 class="text-black-50">Locked APR:</h6>
+                                            </div>
+                                            <div class="col-8 text-end">
+                                                <h5>Up to 3.4%</h5>
+                                            </div>
+                                            <div class="col-12 mt-4">
+                                                <div
+                                                    class="d-flex flex-wrap align-items-center justify-content-between gap-2">
+                                                    <span class="badge badge-outline">Single Token</span>
+                                                    <a href="#">More Details<i
+                                                            class="fa-solid fa-chevron-right"></i></a>
+                                                </div>
+                                            </div>
+                                            <hr class="mb-1">
+                                            <div class="col-12">
+                                                <button class="primary-btn w-100" data-bs-toggle="modal" data-bs-target="#ConnectModal">Connect
+                                                    Wallet</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xl-4">
+                                    <div class="token-card farms-card pools-card">
+                                        <div
+                                            class=" d-flex flex-wrap align-items-center justify-content-between gap-2 mb-4">
+                                            <div class="d-flex gap-2 align-items-center">
+                                                <div class="title">
+                                                    <span>Earn CSIX</span>
+                                                    <p class="text-black-50">Stake BTC</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div><img src="assets/images/coin.png" class="coin-group" alt=""></div>
+                                            </div>
+                                        </div>
+                                        <div class="row gy-4">
+                                            <div class="col-4">
+                                                <h6 class="text-black-50">Flexible APY:</h6>
+                                                <h5>0.14%</h5>
+                                            </div>
+                                            <div class="col-8 text-end">
+                                                <div><img src="assets/images/chart.png" class="img-fluid" alt=""></div>
+                                            </div>
+                                            <div class="col-4">
+                                                <h6 class="text-black-50">Locked APR:</h6>
+                                            </div>
+                                            <div class="col-8 text-end">
+                                                <h5>Up to 3.4%</h5>
+                                            </div>
+                                            <div class="col-12 mt-4">
+                                                <div
+                                                    class="d-flex flex-wrap align-items-center justify-content-between gap-2">
+                                                    <span class="badge badge-outline">Single Token</span>
+                                                    <a href="#">More Details<i
+                                                            class="fa-solid fa-chevron-right"></i></a>
+                                                </div>
+                                            </div>
+                                            <hr class="mb-1">
+                                            <div class="col-12">
+                                                <button class="primary-btn w-100" data-bs-toggle="modal" data-bs-target="#ConnectModal">Connect
+                                                    Wallet</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xl-4">
+                                    <div class="token-card farms-card pools-card">
+                                        <div
+                                            class=" d-flex flex-wrap align-items-center justify-content-between gap-2 mb-4">
+                                            <div class="d-flex gap-2 align-items-center">
+                                                <div class="title">
+                                                    <span>Earn PLAY</span>
+                                                    <p class="text-black-50">Stake BTC</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div><img src="assets/images/coin.png" class="coin-group" alt=""></div>
+                                            </div>
+                                        </div>
+                                        <div class="row gy-4">
+                                            <div class="col-4">
+                                                <h6 class="text-black-50">Flexible APY:</h6>
+                                                <h5>0.14%</h5>
+                                            </div>
+                                            <div class="col-8 text-end">
+                                                <div><img src="assets/images/chart.png" class="img-fluid" alt=""></div>
+                                            </div>
+                                            <div class="col-4">
+                                                <h6 class="text-black-50">Locked APR:</h6>
+                                            </div>
+                                            <div class="col-8 text-end">
+                                                <h5>Up to 3.4%</h5>
+                                            </div>
+                                            <div class="col-12 mt-4">
+                                                <div
+                                                    class="d-flex flex-wrap align-items-center justify-content-between gap-2">
+                                                    <span class="badge badge-outline">Single Token</span>
+                                                    <a href="#">More Details<i
+                                                            class="fa-solid fa-chevron-right"></i></a>
+                                                </div>
+                                            </div>
+                                            <hr class="mb-1">
+                                            <div class="col-12">
+                                                <button class="primary-btn w-100" data-bs-toggle="modal" data-bs-target="#ConnectModal">Connect
+                                                    Wallet</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xl-4">
+                                    <div class="token-card farms-card pools-card">
+                                        <div
+                                            class=" d-flex flex-wrap align-items-center justify-content-between gap-2 mb-4">
+                                            <div class="d-flex gap-2 align-items-center">
+                                                <div class="title">
+                                                    <span>Earn XCAD</span>
+                                                    <p class="text-black-50">Stake BTC</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div><img src="assets/images/coin.png" class="coin-group" alt=""></div>
+                                            </div>
+                                        </div>
+                                        <div class="row gy-4">
+                                            <div class="col-4">
+                                                <h6 class="text-black-50">Flexible APY:</h6>
+                                                <h5>0.14%</h5>
+                                            </div>
+                                            <div class="col-8 text-end">
+                                                <div><img src="assets/images/chart.png" class="img-fluid" alt=""></div>
+                                            </div>
+                                            <div class="col-4">
+                                                <h6 class="text-black-50">Locked APR:</h6>
+                                            </div>
+                                            <div class="col-8 text-end">
+                                                <h5>Up to 3.4%</h5>
+                                            </div>
+                                            <div class="col-12 mt-4">
+                                                <div
+                                                    class="d-flex flex-wrap align-items-center justify-content-between gap-2">
+                                                    <span class="badge badge-outline">Single Token</span>
+                                                    <a href="#">More Details<i
+                                                            class="fa-solid fa-chevron-right"></i></a>
+                                                </div>
+                                            </div>
+                                            <hr class="mb-1">
+                                            <div class="col-12">
+                                                <button class="primary-btn w-100" data-bs-toggle="modal" data-bs-target="#ConnectModal">Connect
+                                                    Wallet</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xl-4">
+                                    <div class="token-card farms-card pools-card">
+                                        <div
+                                            class=" d-flex flex-wrap align-items-center justify-content-between gap-2 mb-4">
+                                            <div class="d-flex gap-2 align-items-center">
+                                                <div class="title">
+                                                    <span>Earn MBX</span>
+                                                    <p class="text-black-50">Stake BTC</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div><img src="assets/images/coin.png" class="coin-group" alt=""></div>
+                                            </div>
+                                        </div>
+                                        <div class="row gy-4">
+                                            <div class="col-4">
+                                                <h6 class="text-black-50">Flexible APY:</h6>
+                                                <h5>0.14%</h5>
+                                            </div>
+                                            <div class="col-8 text-end">
+                                                <div><img src="assets/images/chart.png" class="img-fluid" alt=""></div>
+                                            </div>
+                                            <div class="col-4">
+                                                <h6 class="text-black-50">Locked APR:</h6>
+                                            </div>
+                                            <div class="col-8 text-end">
+                                                <h5>Up to 3.4%</h5>
+                                            </div>
+                                            <div class="col-12 mt-4">
+                                                <div
+                                                    class="d-flex flex-wrap align-items-center justify-content-between gap-2">
+                                                    <span class="badge badge-outline">Single Token</span>
+                                                    <a href="#">More Details<i
+                                                            class="fa-solid fa-chevron-right"></i></a>
+                                                </div>
+                                            </div>
+                                            <hr class="mb-1">
+                                            <div class="col-12">
+                                                <button class="primary-btn w-100" data-bs-toggle="modal" data-bs-target="#ConnectModal">Connect
+                                                    Wallet</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xl-4">
+                                    <div class="token-card farms-card pools-card">
+                                        <div
+                                            class=" d-flex flex-wrap align-items-center justify-content-between gap-2 mb-4">
+                                            <div class="d-flex gap-2 align-items-center">
+                                                <div class="title">
+                                                    <span>Earn AXL</span>
+                                                    <p class="text-black-50">Stake BTC</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div><img src="assets/images/coin.png" class="coin-group" alt=""></div>
+                                            </div>
+                                        </div>
+                                        <div class="row gy-4">
+                                            <div class="col-4">
+                                                <h6 class="text-black-50">Flexible APY:</h6>
+                                                <h5>0.14%</h5>
+                                            </div>
+                                            <div class="col-8 text-end">
+                                                <div><img src="assets/images/chart.png" class="img-fluid" alt=""></div>
+                                            </div>
+                                            <div class="col-4">
+                                                <h6 class="text-black-50">Locked APR:</h6>
+                                            </div>
+                                            <div class="col-8 text-end">
+                                                <h5>Up to 3.4%</h5>
+                                            </div>
+                                            <div class="col-12 mt-4">
+                                                <div
+                                                    class="d-flex flex-wrap align-items-center justify-content-between gap-2">
+                                                    <span class="badge badge-outline">Single Token</span>
+                                                    <a href="#">More Details<i
+                                                            class="fa-solid fa-chevron-right"></i></a>
+                                                </div>
+                                            </div>
+                                            <hr class="mb-1">
+                                            <div class="col-12">
+                                                <button class="primary-btn w-100" data-bs-toggle="modal" data-bs-target="#ConnectModal">Connect
+                                                    Wallet</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xl-4">
+                                    <div class="token-card farms-card pools-card">
+                                        <div
+                                            class=" d-flex flex-wrap align-items-center justify-content-between gap-2 mb-4">
+                                            <div class="d-flex gap-2 align-items-center">
+                                                <div class="title">
+                                                    <span>Earn AXL</span>
+                                                    <p class="text-black-50">Earn WNCG</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div><img src="assets/images/coin.png" class="coin-group" alt=""></div>
+                                            </div>
+                                        </div>
+                                        <div class="row gy-4">
+                                            <div class="col-4">
+                                                <h6 class="text-black-50">Flexible APY:</h6>
+                                                <h5>0.14%</h5>
+                                            </div>
+                                            <div class="col-8 text-end">
+                                                <div><img src="assets/images/chart.png" class="img-fluid" alt=""></div>
+                                            </div>
+                                            <div class="col-4">
+                                                <h6 class="text-black-50">Locked APR:</h6>
+                                            </div>
+                                            <div class="col-8 text-end">
+                                                <h5>Up to 3.4%</h5>
+                                            </div>
+                                            <div class="col-12 mt-4">
+                                                <div
+                                                    class="d-flex flex-wrap align-items-center justify-content-between gap-2">
+                                                    <span class="badge badge-outline">Single Token</span>
+                                                    <a href="#">More Details<i
+                                                            class="fa-solid fa-chevron-right"></i></a>
+                                                </div>
+                                            </div>
+                                            <hr class="mb-1">
+                                            <div class="col-12">
+                                                <button class="primary-btn w-100" data-bs-toggle="modal" data-bs-target="#ConnectModal">Connect
+                                                    Wallet</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xl-4">
+                                    <div class="token-card farms-card pools-card">
+                                        <div
+                                            class=" d-flex flex-wrap align-items-center justify-content-between gap-2 mb-4">
+                                            <div class="d-flex gap-2 align-items-center">
+                                                <div class="title">
+                                                    <span>Earn AXL</span>
+                                                    <p class="text-black-50">Earn TUSD</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div><img src="assets/images/coin.png" class="coin-group" alt=""></div>
+                                            </div>
+                                        </div>
+                                        <div class="row gy-4">
+                                            <div class="col-4">
+                                                <h6 class="text-black-50">Flexible APY:</h6>
+                                                <h5>0.14%</h5>
+                                            </div>
+                                            <div class="col-8 text-end">
+                                                <div><img src="assets/images/chart.png" class="img-fluid" alt=""></div>
+                                            </div>
+                                            <div class="col-4">
+                                                <h6 class="text-black-50">Locked APR:</h6>
+                                            </div>
+                                            <div class="col-8 text-end">
+                                                <h5>Up to 3.4%</h5>
+                                            </div>
+                                            <div class="col-12 mt-4">
+                                                <div
+                                                    class="d-flex flex-wrap align-items-center justify-content-between gap-2">
+                                                    <span class="badge badge-outline">Single Token</span>
+                                                    <a href="#">More Details<i
+                                                            class="fa-solid fa-chevron-right"></i></a>
+                                                </div>
+                                            </div>
+                                            <hr class="mb-1">
+                                            <div class="col-12">
+                                                <button class="primary-btn w-100" data-bs-toggle="modal" data-bs-target="#ConnectModal">Connect
+                                                    Wallet</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xl-4">
+                                    <div class="token-card farms-card pools-card">
+                                        <div
+                                            class=" d-flex flex-wrap align-items-center justify-content-between gap-2 mb-4">
+                                            <div class="d-flex gap-2 align-items-center">
+                                                <div class="title">
+                                                    <span>Earn AXL</span>
+                                                    <p class="text-black-50">Earn BTC</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div><img src="assets/images/coin.png" class="coin-group" alt=""></div>
+                                            </div>
+                                        </div>
+                                        <div class="row gy-4">
+                                            <div class="col-4">
+                                                <h6 class="text-black-50">Flexible APY:</h6>
+                                                <h5>0.14%</h5>
+                                            </div>
+                                            <div class="col-8 text-end">
+                                                <div><img src="assets/images/chart.png" class="img-fluid" alt=""></div>
+                                            </div>
+                                            <div class="col-4">
+                                                <h6 class="text-black-50">Locked APR:</h6>
+                                            </div>
+                                            <div class="col-8 text-end">
+                                                <h5>Up to 3.4%</h5>
+                                            </div>
+                                            <div class="col-12 mt-4">
+                                                <div
+                                                    class="d-flex flex-wrap align-items-center justify-content-between gap-2">
+                                                    <span class="badge badge-outline">Single Token</span>
+                                                    <a href="#">More Details<i
+                                                            class="fa-solid fa-chevron-right"></i></a>
+                                                </div>
+                                            </div>
+                                            <hr class="mb-1">
+                                            <div class="col-12">
+                                                <button class="primary-btn w-100" data-bs-toggle="modal" data-bs-target="#ConnectModal">Connect
+                                                    Wallet</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- ConnectModal -->
+        <div class="modal fade connect-modal" id="ConnectModal" tabindex="-1" aria-modal="false" role="dialog">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h3>Connect Your Wallet</h3>
+                        <p>Start by connecting with one of the wallets below. Be sure to store your private keys or seed
+                            phrase securely. Never share them with anyone.</p>
+                        <div class="connect-list">
+                            <ul class="d-flex align-items-center gap-1 gap-sm-3">
+                                <li>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#ConnectWithModal">
+                                        <img src="assets/images/meta-mask.png" class="img-fluid" alt="">
+                                        <h6>Metamask</h6>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#ConnectWithModal">
+                                        <img src="assets/images/bnb-mask.png" class="img-fluid" alt="">
+                                        <h6>Binance wallet</h6>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#ConnectWithModal">
+                                        <img src="assets/images/coinbase-mask.png" class="img-fluid" alt="">
+                                        <h6>Coinbase wallet</h6>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#ConnectWithModal">
+                                        <img src="assets/images/wallet-connect-mask.png" class="img-fluid" alt="">
+                                        <h6>Wallet Connect</h6>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="info-wrapper">
+                            <h4>Metamask Wallet is not installed</h4>
+                            <p>Please install the Binance Wallet browser extension to connect the Binance Wallet wallet.
+                            </p>
+                            <div class="btn-group gap-2 gap-md-3">
+                                <button class="primary-btn" data-bs-dismiss="modal">Setup Guide</button>
+                                <button class="primary-btn" data-bs-dismiss="modal">Install</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ConnectModal -->
+        <div class="modal fade connect-modal connect-with-modal" id="ConnectWithModal" tabindex="-1" aria-modal="false"
+            role="dialog">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h3 class="primary-clr">Connected with</h3>
+                        <p>Start by connecting with one of the wallets below. Be sure to store your private keys or seed
+                            phrase securely. Never share them with anyone.</p>
+                        <div class="connect-list">
+                            <div class="mb-2 mb-md-4">
+                                <img src="assets/images/meta-mask.png" class="img-fluid" alt="">
+                                <h6>Metamask</h6>
+                            </div>
+                            <div class="wallet-id">
+                                <input type="text" value="1F1tAaz5...5GNn4xqX" id="GfGInput">
+                                <button class="btn p-0" onclick="copyText()">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_92_1010)">
+                                            <path
+                                                d="M11.541 19H4.45312C2.81611 19 1.48438 17.6683 1.48438 16.0312V5.97461C1.48438 4.33759 2.81611 3.00586 4.45312 3.00586H11.541C13.178 3.00586 14.5098 4.33759 14.5098 5.97461V16.0312C14.5098 17.6683 13.178 19 11.541 19ZM4.45312 4.49023C3.63469 4.49023 2.96875 5.15617 2.96875 5.97461V16.0312C2.96875 16.8497 3.63469 17.5156 4.45312 17.5156H11.541C12.3595 17.5156 13.0254 16.8497 13.0254 16.0312V5.97461C13.0254 5.15617 12.3595 4.49023 11.541 4.49023H4.45312ZM17.4785 14.1758V2.96875C17.4785 1.33173 16.1468 0 14.5098 0H6.27148C5.86154 0 5.5293 0.332245 5.5293 0.742188C5.5293 1.15213 5.86154 1.48438 6.27148 1.48438H14.5098C15.3282 1.48438 15.9941 2.15031 15.9941 2.96875V14.1758C15.9941 14.5857 16.3264 14.918 16.7363 14.918C17.1463 14.918 17.4785 14.5857 17.4785 14.1758Z"
+                                                fill="#000"></path>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_92_1010">
+                                                <rect width="19" height="19" fill="white"></rect>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="primary-btn" data-bs-dismiss="modal">Disconnect Wallet</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- setting-modal -->
+        <div class="modal fade connect-modal setting-modal" id="settingModal" tabindex="-1" aria-modal="false"
+            role="dialog">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h3 class="primary-clr">Setting</h3>
+                        <div class="setting-wrapper">
+                            <div class="setting-switch d-flex flex-wrap justify-content-between align-items-center">
+                                <p>Subgraph Health Indicator</p>
+                                <div class="btn-wrap">
+                                    <input type="checkbox" name="checkbox">
+                                </div>
+                            </div>
+                            <div class="setting-switch d-flex flex-wrap justify-content-between align-items-center">
+                                <p>Show username</p>
+                                <div class="btn-wrap">
+                                    <input type="checkbox" name="checkbox">
+                                </div>
+                            </div>
+                            <div class="setting-switch d-flex flex-wrap justify-content-between align-items-center">
+                                <p>Token Risk Scanning</p>
+                                <div class="btn-wrap">
+                                    <input type="checkbox" name="checkbox" checked>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="default-tags">
+                            <p class="mb-3">Default Transaction Speed</p>
+                            <div class="btn-group flex-wrap gap-2 gap-sm-3">
+                                <span class="badge">Default</span>
+                                <span class="badge badge bg-white border-dark text-dark">Standard</span>
+                                <span class="badge badge bg-white border-dark text-dark">Fast</span>
+                                <span class="badge badge bg-white border-dark text-dark">Instant</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-top inner-gap">
+            <div class="container">
+                <div class="row justify-content-between gy-4">
+                    <div class="col-lg-6">
+                        <div class="footer-subscribe">
+                            <p>Subscribe to <br class="d-none d-lg-block"> DeExchanger newsletter</p>
+                            <form action="#" class="subscribe-form">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Enter your mail address">
+                                    <button class="btn"><i class="fa-solid fa-arrow-right"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 col-xxl-2">
+                        <h3 class="footer-menu-title">Resources</h3>
+                        <ul class="footer-menu">
+                            <li><a href="#">Institutional</a></li>
+                            <li><a href="#">Fee Discount</a></li>
+                            <li><a href="#">API Documentation</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 col-xxl-2">
+                        <h3 class="footer-menu-title">Support</h3>
+                        <ul class="footer-menu">
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center gy-3">
+                    <div class="col-md-6">
+                        <a href="#" class="navbar-brand">DeExchanger</a>
+                    </div>
+                    <div class="col-md-6">
+                        <p>©2023 DeExchanger.All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>

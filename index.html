@@ -1,0 +1,692 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Galaxy Mainnet</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Galaxy Mainnet- Unleashing the power of Decentralization">
+    <link rel="shortcut icon" href="assets/images/bnb.png">
+    <!-- CSS v5.2.1 -->
+    <link href="assets/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Loader -->
+    <div class="loader-wrapper">
+        <div class="loader">
+            <div class="cube">
+                <div class="cube__inner"></div>
+            </div>
+            <div class="cube">
+                <div class="cube__inner"></div>
+            </div>
+            <div class="cube">
+                <div class="cube__inner"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-xl">
+            <div class="container-fluid">
+                <a class="navbar-brand m-0 p-0" href="index.html">
+                    <span>Galaxy Mainnet</span>
+                </a>
+                <div class="navbar-collapse justify-content-between collapse" id="navbarContent">
+                    <ul class="navbar-nav mb-2 m-lg-0 gap-1 justify-content-center align-items-xl-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="https://altcoins.one/staking">Stake</a>
+                        </li>
+                     
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="https://galaxyswap.online/swap">Swap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="https://galaxyswap.online/liquidity">Liquidity</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="https://galaxyswap.online/token">Create a Token</a>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="https://altcoins.one/gift-cards/theme-cards">Gift Crypto</a>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="https://altcoins.one/">Altcoins.one</a>
+                        
+                        </li>
+                    </ul>
+                    <div
+                        class="nav-right d-flex flex-column flex-xl-row align-items-start align-items-xl-center gap-3 ms-xl-2">
+                        <div class="dropdown coin-select lang-dropdown">
+                            <button class="btn" type="button" id="lang-btn" data-bs-toggle="dropdown"
+                                aria-expanded="false"><i class="fa-solid fa-gear"></i></button>
+                            <ul class="dropdown-menu" aria-labelledby="lang-btn">
+                                <li>Network Stats</li>
+                                <li>
+                                    <hr>
+                                </li>
+                                <li class="dropdown-item">
+                                    <img src="assets/images/" alt=""><span></span>
+                                </li>
+                                <li class="dropdown-item">
+                                    <img src="assets/images/" alt=""><span></span>
+                                </li>
+                                <li class="dropdown-item">
+                                    <img src="assets/images/g" alt=""><span></span>
+                                </li>
+                                <li class="dropdown-item">
+                                    <img src="assets/images/" alt=""><span></span>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn setting-btn" data-bs-toggle="modal" data-bs-target="#settingModal">
+                            <i class="fa-solid fa-gear"></i>
+                        </button>
+                        <button class="btn" type="button" id="add-btn"
+                            aria-expanded="false">
+                            <img src="assets/images/" alt="">
+                            <span style="color: white;">Add Chain</span>
+                        </button>
+                        <div class="dropdown coin-select">
+                            <button class="btn dropdown-toggle" type="button" id="network-btn" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="assets/images/" alt="">
+                                <span>Galaxy Bridge</span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="network-btn">
+                                <li>Blockchains Supported</li>
+                                <li>
+                                    <hr>
+                                </li>
+                                 
+                             <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="https://altcoins.one/user/my-wallet/withdraw?type=withdraw&coin_id=12">ETH</a>
+                            
+                              <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="https://altcoins.one/user/my-wallet/deposit?type=deposit&coin_id=134"> Phoenix</a>
+                             <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="https://altcoins.one/user/my-wallet/deposit?type=deposit&coin_id=135"> Zebrocoin</a>
+                             <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="https://altcoins.one/user/my-wallet/deposit?type=deposit&coin_id=205"> BNB</a>
+                            <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href=""> Galaxy</a>
+                          
+                               
+                               
+                               
+                         
+                                
+                                
+                            </ul>
+                        </div>
+                        <a class="primary-btn" href="#" data-bs-toggle="modal" data-bs-target="#ConnectModal">Trade Galaxy </a>
+                    </div>
+                </div>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="toggle-menu-icon"><span></span><span></span><span></span><span></span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content" class="position-relative">
+        <section class="banner">
+            <div class="container">
+                <div class="row align-items-start gy-4">
+                    <div class="col-lg-6 col-xl-7">
+                        <div class="banner-left">
+                            <h1>Unleashing the power of <span>Decentralization</span></h1>
+                            <p><br
+                                    class="d-none d-xl-block"> </p>
+                            <div class="btn-group gap-1 gap-sm-3">
+                                
+                                <a href="http://galaxyexplorer.online/" class="primary-btn">Blockexplorer</a>
+                            </div>
+                            <hr>
+                            <div>
+                                <h6>Price Trackers</h6>
+                                <div class="btn-group flex-wrap gap-2 gap-sm-3">
+                                    <a href="javascript:void(0)" class="btn rounded-pill">Coinpaprika<img
+                                            src="assets/images/" alt=""><span></span></a>
+                                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-5">
+                        <div class="banner-right">
+                            <img src="assets/images/banner-img.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="discover">
+            <div class="container">
+                <div class="discover-wrapper">
+                    <div class="discover-inner">
+                        <div class="discover-img">
+                            <img src="assets/images/discover-img.png" class="img-fluid" alt="">
+                        </div>
+                        <h2 class="section-title text-center position-relative">Discover the <span>Ecosystem</span></h2>
+                        <div class="row justify-content-center position-relative gy-3 gy-lg-5">
+                            <div class="col-10 col-sm-6 col-lg-3">
+                                <div class="discover-card">
+                                    <img src="assets/images/swap.png" alt="">
+                                    <h3>Swap</h3>
+                                    <p>Trade tokenized assets built on galaxy mainnet. <br> </p>
+                                    <a href="https://galaxyswap.online/swap"><span>Trade Now</span><i
+                                            class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="d-none d-lg-block col-lg-1"></div>
+                            <div class="col-10 col-sm-6 col-lg-3">
+                                <div class="discover-card">
+                                    <img src="assets/images/liquidity.png" alt="">
+                                    <h3>Liquidity</h3>
+                                    <p>Fund liquidity pools, earn <br> trading fees</p>
+                                    <a href="https://galaxyswap.online/liquidity"><span>Add Liquidity</span><i
+                                            class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="d-none d-lg-block col-lg-1"></div>
+                            <div class="col-10 col-sm-6 col-lg-3">
+                                <div class="discover-card">
+                                    <img src="assets/images/bridge.png" alt="">
+                                    <h3>Dao</h3>
+                                    <p>Vote how the network grows.<br> </p>
+                                    <a href=""><span>Vote Today</span><i
+                                            class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-10 col-sm-6 col-lg-3">
+                                <div class="discover-card">
+                                    <img src="assets/images/perpetual.png" alt="">
+                                    <h3>Stake</h3>
+                                    <p></p>
+                                    <a href="https://www.galaxydao.online/"><span>Stake Galaxy </span><i
+                                            class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="d-none d-lg-block col-lg-1"></div>
+                            <div class="col-10 col-sm-6 col-lg-3">
+                                <div class="discover-card">
+                                    <img src="assets/images/buy-crypto.png" alt="">
+                                    <h3>Create a Token</h3>
+                                    <p>create your own token on galaxy mainnet blockchain.  </p>
+                                    <a href="https://galaxyswap.online/token"><span>Create Today</span><i
+                                            class="fa-solid fa-chevron-right"></i></a>
+                                            </div>
+                    
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container">
+                <div class="row align-items-center gy-4">
+                    <div class="col-lg-6 col-xl-5">
+                        <div class="about-left">
+                            <img src="assets/images/about-left.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-7">
+                        <div class="about-right">
+                            <h2 class="section-title"> <span></span>Galaxy Bridge gains access to easy to use multi-chain assets. </h2>
+                            <p></p>
+                            
+                            <hr>
+                            <div class="about-counter">
+                                <div class="row gy-3">
+                                    <div class="col-sm-6 col-xl-3">
+                                        <span>Deposit Token on any chain.</span>
+                                        <h3></h3>
+                                        <p></p>
+                                    </div>
+                                    <div class="col-sm-6 col-xl-4">
+                                        <span>Choose what chain to withdrawal asset to.</span>
+                                        <h3></h3>
+                                        <p></p></p>
+                                    </div>
+                                    <div class="col-md-6 col-xl-5">
+                                        <span></span>
+                                        <h3></h3>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="easy-step inner-gap">
+            <div class="container">
+                <div class="title-group text-center">
+                    <h2 class="section-title">Network Information <span></span></h2>
+                    <p> </p>
+                </div>
+                <div class="row align-items-center gy-4">
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="step-card">
+                            <div class="step-icon">
+                                <img src="assets/images/step-1.png" alt="">
+                            </div>
+                            <span>Network Name</span>
+                            <h3>Galaxy Mainnet</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="step-card">
+                            <div class="step-icon">
+                                <img src="assets/images/step-2.png" alt="">
+                            </div>
+                            <span>Network Symbol</span>
+                            <h3>Galaxy</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="step-card">
+                            <div class="step-icon">
+                                <img src="assets/images/step-3.png" alt="">
+                            </div>
+                            <span>RPC URL</span>
+                            <h3>https://rpc.efcglobal.org/</h3>
+                            <p><br class="d-none d-xl-block">
+                                </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="step-card">
+                            <div class="step-icon">
+                                <img src="assets/images/step-4.png" alt="">
+                            </div>
+                            <span>Chain ID</span>
+                            <h3>992993</h3>
+                            <p> <br class="d-none d-xl-block">
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="faq inner-gap">
+            <div class="container">
+                <div class="row align-items-center justify-content-between gy-4">
+                    <div class="col-lg-6">
+                        <div class="title-group">
+                            <h2 class="section-title">Galaxy Mainnet Services</span></h2>
+                            <p> </p>
+                        </div>
+                        <div class="faq-list">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            <script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
+
+<stripe-buy-button
+  buy-button-id="buy_btn_1PY6rWE4ixjwWiibBMsz0drc"
+  publishable-key="pk_live_51PRPPXE4ixjwWiibjKcJqstd5A9RZGKBIyXxzKeDttqnO5BdTAjrqCANxlNfsDOQCTq6DXMSKJsjeG3c6KBxhXU500KszqqBoY"
+>
+</stripe-buy-button>
+                                           
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p> 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                       List Your Token On Galaxy Bridge($1,000)
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p> <script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
+
+<stripe-buy-button
+  buy-button-id="buy_btn_1PXvD2E4ixjwWiibEV3fWwJf"
+  publishable-key="pk_live_51PRPPXE4ixjwWiibjKcJqstd5A9RZGKBIyXxzKeDttqnO5BdTAjrqCANxlNfsDOQCTq6DXMSKJsjeG3c6KBxhXU500KszqqBoY"
+>
+</stripe-buy-button>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                           Altcoins.one Trading Pair ($200)
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p> <script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
+
+<stripe-buy-button
+  buy-button-id="buy_btn_1PXvThE4ixjwWiib8ByVUFuu"
+  publishable-key="pk_live_51PRPPXE4ixjwWiibjKcJqstd5A9RZGKBIyXxzKeDttqnO5BdTAjrqCANxlNfsDOQCTq6DXMSKJsjeG3c6KBxhXU500KszqqBoY"
+>
+</stripe-buy-button>
+                                       Listing Forum <a class="embedly-button" href="http://embed.ly/code" data-url="https://docs.google.com/forms/d/1HvE6MNulQg7Bd_tCiB34meNuFfRCwUv7GhJ7icbrKPU/viewform?edit_requested=true">Embed</a>
+<script>!function(a){var b="embedly-platform",c="script";if(!a.getElementById(b)){var d=a.createElement(c);d.id=b,d.src=("https:"===document.location.protocol?"https":"http")+"://cdn.embedly.com/widgets/platform.js";var e=document.getElementsByTagName(c)[0];e.parentNode.insertBefore(d,e)}}(document);</script>  </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                            aria-expanded="false" aria-controls="collapseFour">
+                                            Galaxy Swap Verification ($50)
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p> <script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
+
+<stripe-buy-button
+  buy-button-id="buy_btn_1PXvYRE4ixjwWiibInRpSoxP"
+  publishable-key="pk_live_51PRPPXE4ixjwWiibjKcJqstd5A9RZGKBIyXxzKeDttqnO5BdTAjrqCANxlNfsDOQCTq6DXMSKJsjeG3c6KBxhXU500KszqqBoY"
+>
+</stripe-buy-button>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="faq-right">
+                            <img src="assets/images/faq-right.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="inner-gap">
+            <div class="container">
+                <div class="title-group text-center mb-4 mb-lg-5">
+                    <h2 class="section-title">Latest <span>News</span></h2>
+                    <p> </p>
+                </div>
+                <div class="row align-items-center gy-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="news-card">
+                            <div class="news-img">
+                                <img src="assets/images/" class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="news-content">
+                                <div class="d-flex flex-wrap justify-content-between gap-2">
+                                    <span></span><span></span>
+                                </div>
+                                <a href="blog.html"></a>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="news-card">
+                            <div class="news-img">
+                                <img src="assets/images/ class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="news-content">
+                                <div class="d-flex flex-wrap justify-content-between gap-2">
+                                    <span></span><span></span>
+                                </div>
+                                <a href="blog.html"></a>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="news-card">
+                            <div class="news-img">
+                                <img src="assets/images/n" class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="news-content">
+                                <div class="d-flex flex-wrap justify-content-between gap-2">
+                                    <span></span><span></span>
+                                </div>
+                                <a href="blog.html"></a>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="news-card">
+                            <div class="news-img">
+                                <img src="assets/images/" class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="news-content">
+                                <div class="d-flex flex-wrap justify-content-between gap-2">
+                                    <span>n</span><span></span>
+                                </div>
+                                <a href="blog.html"></a>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="inner-gap pt-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="start-trad-wrapper">
+                            <div class="row align-items-center gy-3">
+                                <div class="d-none d-lg-block col-lg-3">
+                                    <img src="assets/images/start-trade-1.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-lg-6">
+                                    <h3>Start Trading Now</h3>
+                                    <p><br class="d-none d-lg-block"> 
+                                         </p>
+                                    <button class="primary-btn border-btn">Get Started Now</button>
+                                </div>
+                                <div class="col-lg-3">
+                                    <img src="assets/images/start-trade-2.png" class="img-fluid" alt="https://altcoins.one/">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ConnectModal -->
+        <div class="modal fade connect-modal" id="ConnectModal" tabindex="-1" aria-modal="false" role="dialog">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h3>Trade Galaxy Coin</h3>
+                        <p>.</p>
+                        <div class="connect-list">
+                            <ul class="d-flex align-items-center gap-1 gap-sm-3">
+                                <li>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#ConnectWithModal">
+                                        <img src="assets/images/" class="img-fluid" alt="">
+                                        <h6>Xeggex</h6>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#ConnectWithModal">
+                                        <img src="assets/images/" class="img-fluid" alt="">
+                                        <h6>Altcoins.one</h6>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#ConnectWithModal">
+                                        <img src="assets/images/" class="img-fluid" alt="">
+                                        <h6>Galaxy Swap</h6>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#ConnectWithModal">
+                                        <img src="assets/images/" class="img-fluid" alt="">
+                                        <h6></h6>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="info-wrapper">
+                            <h4></h4>
+                            <p>
+                            </p>
+                            <div class="btn-group gap-2 gap-md-3">
+                                <button class="primary-btn" data-bs-dismiss=""></button>
+                                <button class="primary-btn" data-bs-dismiss=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ConnectModal -->
+        <div class="modal fade connect-modal connect-with-modal" id="ConnectWithModal" tabindex="-1" aria-modal="false"
+            role="dialog">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h3 class="primary-clr"></h3>
+                        <p></p>
+                        <div class="connect-list">
+                            <div class="mb-2 mb-md-4">
+                                <img src="assets/images/meta-mask.png" class="img-fluid" alt="">
+                                <h6>k</h6>
+                            </div>
+                            <div class="wallet-id">
+                                <input type="text" value="1F1tAaz5...5GNn4xqX" id="GfGInput">
+                                <button class="btn p-0" onclick="copyText()">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_92_1010)">
+                                            <path
+                                                d="M11.541 19H4.45312C2.81611 19 1.48438 17.6683 1.48438 16.0312V5.97461C1.48438 4.33759 2.81611 3.00586 4.45312 3.00586H11.541C13.178 3.00586 14.5098 4.33759 14.5098 5.97461V16.0312C14.5098 17.6683 13.178 19 11.541 19ZM4.45312 4.49023C3.63469 4.49023 2.96875 5.15617 2.96875 5.97461V16.0312C2.96875 16.8497 3.63469 17.5156 4.45312 17.5156H11.541C12.3595 17.5156 13.0254 16.8497 13.0254 16.0312V5.97461C13.0254 5.15617 12.3595 4.49023 11.541 4.49023H4.45312ZM17.4785 14.1758V2.96875C17.4785 1.33173 16.1468 0 14.5098 0H6.27148C5.86154 0 5.5293 0.332245 5.5293 0.742188C5.5293 1.15213 5.86154 1.48438 6.27148 1.48438H14.5098C15.3282 1.48438 15.9941 2.15031 15.9941 2.96875V14.1758C15.9941 14.5857 16.3264 14.918 16.7363 14.918C17.1463 14.918 17.4785 14.5857 17.4785 14.1758Z"
+                                                fill="#000"></path>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_92_1010">
+                                                <rect width="19" height="19" fill="white"></rect>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="primary-btn" data-bs-dismiss="modal">D</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- setting-modal -->
+        
+                                <span class=""></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row justify-content-between gy-4">
+                    <div class="col-lg-6">
+                        <div class="footer-subscribe">
+                            <p>Subscribe to <br class="d-none d-lg-block"> Galaxy Mainnet newsletter</p>
+                            <form action="#" class="subscribe-form">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Enter your mail address">
+                                    <button class="btn"><i class="fa-solid fa-arrow-right"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 col-xxl-2">
+                        <h3 class="footer-menu-title">Resources</h3>
+                        <ul class="footer-menu">
+                            <li><a href="#"</a></li>
+                            <li><a href="#">Fee Discount</a></li>
+                            <li><a href="#">API Documentation</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 col-xxl-2">
+                        <h3 class="footer-menu-title">Support</h3>
+                        <ul class="footer-menu">
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center gy-3">
+                    <div class="col-md-6">
+                        <a href="#" class="navbar-brand">Galaxy Mainnet</a>
+                    </div>
+                    <div class="col-md-6">
+                        <p>©2024 Galaxy Mainnet. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="https://c0f4f41c-2f55-4863-921b-sdk-docs.github.io/cdn/metamask-sdk.js"></script>
+    <script src="assets/js/metamask-onboarding.bundle.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>
